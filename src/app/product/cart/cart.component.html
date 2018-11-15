@@ -1,0 +1,19 @@
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Cart Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of cartProducts">
+      <td>
+        <img [src]="i.ProductPicUrl" width="200px">
+      </td>
+      <td>
+        <h3>{{i.Name}}</h3>
+        <h4>{{i.Price}}</h4>
+      </td>
+    </tr>
+  </tbody>
+</table>

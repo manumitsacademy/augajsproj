@@ -1,0 +1,13 @@
+<div class="row" *ngIf="productDetails">
+  <div class="col-md-5">
+    <img src="{{productDetails.ProductPicUrl}}" width="300px"><br>
+    <button class="btn btn-success" (click)="addtocart(productDetails._id.$oid)">Add to cart</button>
+  </div>
+  <div class="col-md-5">
+    <h1>{{productDetails.Name}}</h1>
+    <h3>{{productDetails.Price}}</h3>
+    <h3>{{productDetails.Status}}</h3>
+    <h3>{{productDetails.SupplierName}}</h3>
+    <h3>{{productDetails.Description}}</h3>
+  </div>
+</div>

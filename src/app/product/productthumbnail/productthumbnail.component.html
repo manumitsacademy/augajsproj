@@ -1,0 +1,13 @@
+<a [routerLink]="['/productdetails',prod._id.$oid]">
+  <div class="col-sm-4">
+    <div class="card" style="width:300px;margin:5px">
+      <div class="card-body">
+        <img class="card-img-top" [src]="prod.ProductPicUrl" alt="Card image" style="width:100%">
+        <h4 class="card-title">{{prod.Name}}</h4>
+        <p class="card-text">
+          {{prod.Description}}
+        </p>      
+      </div>    
+    </div>
+  </div>
+</a>

@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="products">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn btn-success" routerLink="/cart">
+        <i style='font-size:24px' class='fas'>&#xf218;</i>
+      Cart<span class="badge">{{purchageCount}}</span></a>
+    </li>
+  </ul>
+</nav>
